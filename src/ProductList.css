@@ -111,6 +111,26 @@ body {
     background-color: #c0392b;
 }
 
+  .product-button.added-to-cart {
+    background-color: grey;
+  }
+
+.product-button:disabled,
+.product-button[disabled] {
+  background-color: #bdbdbd !important;
+  border-color: #bbbbbb !important;
+  color: #ffffff !important;
+  cursor: not-allowed;
+  opacity: 0.75;
+  box-shadow: none;
+}
+
+.product-button:disabled:hover,
+.product-button[disabled]:hover {
+  background-color: #bdbdbd !important;
+  transform: none;
+}
+
 /* Pseudo-elements - Sale badge */
 .product-card::before {
     content: "SALE";
